@@ -14,30 +14,30 @@
     <div class="wrapper">
         <section class="form signup">
             <header>CHAT KIỆT TAIHEN</header>
-            <form action="#">
-                <div class="error-txt">Tin nhắn này đã bị lỗi</div>
+            <form action="#" enctype="multipart/form-data">
+                <div class="error-txt"></div>
                 <div class="name-details">
                     <div class="field input">
                         <label>Họ</label>
-                        <input type="text" placeholder="Nhập họ">
+                        <input type="text" name="fname" placeholder="Nhập họ" required>
                     </div>
                     <div class="field input">
                         <label>Tên</label>
-                        <input type="text" placeholder="Nhập tên">
+                        <input type="text" name="lname" placeholder="Nhập tên" required>
                     </div>
                 </div>
                     <div class="field input">
                         <label>Địa chỉ email</label>
-                        <input type="text" placeholder="Hãy nhập email">
+                        <input type="text" name="email" placeholder="Hãy nhập email" required>
                     </div>
                     <div class="field input">
                         <label>Mật khẩu</label>
-                        <input type="password" placeholder="Hãy nhập mật khẩu">
+                        <input type="password" name="password" placeholder="Hãy nhập mật khẩu" required>
                         <i class="fa-solid fa-eye"></i>
                     </div>
                     <div class="field image">
                         <label>Chọn Ảnh</label>
-                        <input type="file">
+                        <input type="file" name="image" required>
                     </div>
                     <div class="field button">
                         <input type="submit" value="Tiếp tục vào Chat">
@@ -48,5 +48,6 @@
         
     </div>
     <script src="./javascript/pass-show-hide.js"></script>
+    <script src="./javascript/signup.js"></script>
 </body>
 </html>
